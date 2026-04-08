@@ -12,3 +12,15 @@ const cartContainer = document.getElementById("cartContainer");
 const totalPrice = document.getElementById("totalPrice");
 const emptyCartMessage = document.getElementById("emptyCartMessage");
 let cart = [];
+
+
+
+// Loading
+function showLoading() {
+  loadingSpinner.classList.remove("hidden");
+  treesContainer.innerHTML = "";
+}
+function hideLoading() {
+  loadingSpinner.classList.add("hidden");
+}
+
